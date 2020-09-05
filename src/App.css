@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.c19header {
+  display: flex;
+  align-items: center;
+  justify-items: left;
+  padding: 10px;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+.c19logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  flex-grow: 2;
+}
+
+.c19logo img{
+  animation: Logo-spin infinite 20s linear;
+}
+
+.c19logo h1 {
+  margin: 5px;
+}
+
+.c19logo h1 span {
+  color: #c00;
+}
+
+.c19GlobalData{
+  display: flex;
+  flex-grow: 3;
+}
+
+.c19GlobalData > div {
+  margin: 0 20px;
+}
+
+.c19GlobalData p {
+  margin: 0
+}
+
+.c19GlobalData .c19TotalCases{
+  color: #999;
+}
+
+.c19GlobalData .c19ActiveCases{
+  color: #1997eb;
+}
+
+.c19GlobalData .c19RecoverCases{
+  color: #16D39A;
+}
+
+.c19GlobalData .c19DeathCases{
+  color: #FF7588;
+}
+
+.c19GlobalData p.confirmedLabel, .c19GlobalData p.activeLabel, .c19GlobalData p.recoveredLabel, .c19GlobalData p.deathLabel {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.c19GlobalData p.confirmedCases, .c19GlobalData p.activeCases, .c19GlobalData p.recoveredCases, .c19GlobalData p.deathCases {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.c19GlobalData p.todayCases, .c19GlobalData p.todayRecoveredCases, .c19GlobalData p.todayDeathCases {
+  font-size: 14px;
+}
+
+.c19LeftContent, .c19RightContent {
+  padding: 20px 0;
+}
+
+.c19LeftContent .c19ExploreCountry {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 5px 5px 0 0px;
+  justify-content: space-between;
+}
+
+.c19LeftContent .c19ExploreCountry .c19CountryDropDown {
+  margin-right: 20px;
+  width: 100%;
+}
+
+.c19LeftContent .countryStats {
+  margin-top: 0px;
+}
+
+.c19LeftContent .c19InfoCard {
+  height: 100%;
+  cursor: pointer;
+}
+
+.c19LeftContent .confirmed, .c19LeftContent .active, .c19LeftContent .recovered, .c19LeftContent .deaths {
+  border: none;
+  box-sizing: border-box;
+}
+
+.c19LeftContent .confirmed {
+  color: #999
+}
+
+.c19LeftContent .active {
+  color: #1997eb;
+}
+
+.c19LeftContent .recovered {
+  color: #16D39A;
+}
+
+.c19LeftContent .deaths {
+  color: #FF7588;
+}
+
+.c19LeftContent .confirmed.infoBoxActive {
+  border-top: 6px solid;
+  border-color: #999;
+}
+
+.c19LeftContent .active.infoBoxActive {
+  border-top: 6px solid;
+  border-color: #1997eb;
+}
+
+.c19LeftContent .recovered.infoBoxActive {
+  border-top: 6px solid;
+  border-color: #16D39A;
+}
+
+.c19LeftContent .deaths.infoBoxActive {
+  border-top: 6px solid;
+  border-color: #FF7588;
+}
+
+.c19LeftContent .confirmed h2, .c19LeftContent .active h2, .c19LeftContent .recovered h2, .c19LeftContent .deaths h2 {
+  font-weight: bold;
+}
+
+.c19RightContent .lineGraph {
+  height: 250px;
+}
+
+@keyframes Logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
