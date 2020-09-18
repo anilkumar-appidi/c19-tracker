@@ -120,6 +120,10 @@
   cursor: pointer;
 }
 
+.c19InfoCard.active {
+  cursor: not-allowed;
+}
+
 .c19LeftContent .confirmed, .c19LeftContent .active, .c19LeftContent .recovered, .c19LeftContent .deaths {
   border: none;
   box-sizing: border-box;

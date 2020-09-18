@@ -100,7 +100,6 @@ function MainContent() {
                                     <InfoCard
                                         title='Active'
                                         cases={countryInfo.active}
-                                        onClick={() => setCaseType('activeCases')}
                                         active={caseType==='activeCases'}
                                     />
                                 </Grid>
