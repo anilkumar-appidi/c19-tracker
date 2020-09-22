@@ -10,6 +10,7 @@ function Header() {
                 setGlobalInfo(data)
             })
     }, [])
+    
     return (
         <div className='c19header'>
             <div className='c19logo'>
